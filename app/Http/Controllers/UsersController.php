@@ -138,7 +138,7 @@ class UsersController extends Controller{
         if($search == "none" || $search == ""){
             $videos = Video::where("status", 1)->take($next)->get();
         }else{
-            $videos = Video::where(["status"=> 1])->where("name", "LIKE", "%$search%"])->take($next)->get();
+            $videos = Video::where(["status"=> 1])->where("name", "LIKE", "%$search%")->take($next)->get();
         }
         if($customer != 1){
             $history = CustomerVideo::join("videos", "videos.video_id", "customer_videos.video_id")
