@@ -50,5 +50,5 @@ Route::get('/mobile/unsubscribe/{field_id}/{customer_id}', 'CustomersController@
 Route::get('/mobile/send_push/{title}/{body}/{field_id}', 'AdminsController@sendPush');
 Route::post('/mobile/reset', 'UsersController@mobileReset');
 
-Route::get('/mobile/videos/{customer}/{length}/{search}', 'UsersController@mobileVideos');
-Route::get('/mobile/save_history/{customer}/{video_id}', 'UsersController@saveHistory');
+Route::get('/bakes/mobile/videos/{customer}/{length}/{search}', 'UsersController@mobileVideos');
+Route::get('/bakes/mobile/save_history/{customer}/{video_id}', 'UsersController@saveHistory');
